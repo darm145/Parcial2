@@ -1,0 +1,8 @@
+edu\eci\weatherApp\memory\WeatherMemory.class
+edu\eci\weatherApp\memory\Interfaces\DAO.class
+edu\eci\weatherApp\services\WeatherServices.class
+edu\eci\weatherApp\memory\Interfaces\IWeatherMemory.class
+edu\eci\weatherApp\model\WeatherData.class
+edu\eci\weatherApp\controllers\WeatherController.class
+edu\eci\weatherApp\services\contracts\IWeatherServices.class
+edu\eci\weatherApp\WeatherAPIApplication.class

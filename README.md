@@ -125,4 +125,10 @@ document.getElementById("demo").innerHTML = "name: " + obj.name + ", age: " + ob
 ```
 
 * Código de página con Mapa embebido [(Ver archivo)](index.html)
+
+
+#Entrega
+##Diseño
+Para el diseño se decidio definir metodos REST de get y put, de esta manera se recibiran todas las consultas que ha hecho el usuario y se guardaran en memoria volatil ya que no se ve necesario usar una base de datos para guardar las consultas ya que estas deberan ser borradas posteriormente, en su mayoria las peticiones se realizaran en el front end y cada servicio se llamara desde allá, al back solo se accederá para guardar los datos que se han solicitado y que seran borrados 5 minutos despues.
+la peticion al servicio externo se realizara con un metodo en javascript y al recibir los datos se mapearan inmediatamente en la tabla y se enviaran al back. 
     
