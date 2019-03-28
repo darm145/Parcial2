@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import edu.eci.weatherApp.http.HttpConnectionExample;
 import edu.eci.weatherApp.memory.Interfaces.IWeatherMemory;
 import edu.eci.weatherApp.model.WeatherData;
 import edu.eci.weatherApp.services.contracts.IWeatherServices;
@@ -30,6 +31,12 @@ public class WeatherServices implements IWeatherServices{
 	@Override
 	public String save(WeatherData entity) {
 		return WeatherMemory.save(entity);
+	}
+
+	@Override
+	public String SearchByCity(String name) {
+		HttpConnectionExample a=new HttpConnectionExample();
+		return a.getJson(name);
 	}
 
 }

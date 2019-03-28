@@ -6,5 +6,5 @@ import edu.eci.weatherApp.memory.Interfaces.DAO;
 import edu.eci.weatherApp.model.WeatherData;
 @Service
 public interface IWeatherServices extends DAO<WeatherData,String>{
-	
+	String SearchByCity(String name);
 }
